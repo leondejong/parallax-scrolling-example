@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  position: relative;
+}
+
+html,
+body,
+.container {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 1);
+}
+
+.header,
+.footer {
+  position: fixed;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 1;
+}
+
+.header {
+  top: 0;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.footer {
+  bottom: 0;
+  text-align: right;
+  font-size: 1rem;
+}
+
+.parallax {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.1875rem 0.0625rem rgba(0, 0, 0, 0.5);
+  transform: translate(0, -50%);
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+.body {
+  font-size: 1rem;
+}
+
+.section-1 {
+  background-image: url(centaurus-a.jpg);
+}
+
+.section-2 {
+  background-image: url(crab-nebula.jpg);
+}
+
+.section-3 {
+  background-image: url(antennae-galaxies.jpg);
+}
